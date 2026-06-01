@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 97%;
+    --foreground: 30 10% 15%;
+
+    --card: 40 30% 95%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 40 33% 97%;
+    --popover-foreground: 30 10% 15%;
+
+    --primary: 24 80% 50%;
+    --primary-foreground: 40 33% 97%;
+
+    --secondary: 40 20% 90%;
+    --secondary-foreground: 30 10% 25%;
+
+    --muted: 40 15% 92%;
+    --muted-foreground: 30 8% 50%;
+
+    --accent: 160 40% 45%;
+    --accent-foreground: 40 33% 97%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 40 33% 97%;
+
+    --border: 35 20% 87%;
+    --input: 35 20% 87%;
+    --ring: 24 80% 50%;
+
+    --radius: 0.75rem;
+
+    --chart-1: 24 80% 50%;
+    --chart-2: 160 40% 45%;
+    --chart-3: 45 80% 55%;
+    --chart-4: 200 50% 50%;
+    --chart-5: 340 60% 55%;
+
+    --habit-complete: 160 50% 42%;
+    --habit-incomplete: 40 15% 88%;
+    --habit-streak: 45 90% 55%;
+
+    --week-1: 15 85% 92%;
+    --week-2: 200 70% 92%;
+    --week-3: 340 60% 93%;
+    --week-4: 45 80% 90%;
+    --week-5: 280 50% 93%;
+    --week-1-accent: 15 85% 75%;
+    --week-2-accent: 200 70% 70%;
+    --week-3-accent: 340 60% 75%;
+    --week-4-accent: 45 80% 65%;
+    --week-5-accent: 280 50% 75%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 30 10% 10%;
+    --foreground: 40 20% 90%;
+
+    --card: 30 10% 14%;
+    --card-foreground: 40 20% 90%;
+
+    --popover: 30 10% 12%;
+    --popover-foreground: 40 20% 90%;
+
+    --primary: 24 80% 55%;
+    --primary-foreground: 30 10% 10%;
+
+    --secondary: 30 10% 20%;
+    --secondary-foreground: 40 20% 80%;
+
+    --muted: 30 8% 18%;
+    --muted-foreground: 40 10% 55%;
+
+    --accent: 160 40% 50%;
+    --accent-foreground: 30 10% 10%;
+
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 40 20% 90%;
+
+    --border: 30 8% 22%;
+    --input: 30 8% 22%;
+    --ring: 24 80% 55%;
+
+    --habit-complete: 160 50% 38%;
+    --habit-incomplete: 30 8% 20%;
+    --habit-streak: 45 80% 50%;
+
+    --week-1: 15 60% 20%;
+    --week-2: 200 50% 20%;
+    --week-3: 340 40% 20%;
+    --week-4: 45 50% 18%;
+    --week-5: 280 35% 20%;
+    --week-1-accent: 15 60% 45%;
+    --week-2-accent: 200 50% 45%;
+    --week-3-accent: 340 40% 45%;
+    --week-4-accent: 45 50% 40%;
+    --week-5-accent: 280 35% 45%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3 {
+    font-family: 'DM Serif Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'DM Serif Display', serif;
+  }
+}
