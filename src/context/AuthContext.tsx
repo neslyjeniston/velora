@@ -66,7 +66,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 ) => {
   try {
     const response = await fetch(
-      "http://localhost:5000/api/auth/register",
+      "https://velora-backend-1ty1.onrender.com/api/auth/register",
       {
         method: "POST",
         headers: {
@@ -108,7 +108,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const login = useCallback(async (email: string, password: string) => {
   try {
     const response = await fetch(
-      "http://localhost:5000/api/auth/login",
+      "https://velora-backend-1ty1.onrender.com/api/auth/login",
       {
         method: "POST",
         headers: {

@@ -59,7 +59,7 @@ export function HabitProvider({ children }: { children: React.ReactNode }) {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-      "http://localhost:5000/api/habits",
+      "https://velora-backend-1ty1.onrender.com/api/habits",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -87,7 +87,7 @@ const fetchCompletions = async () => {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-      "http://localhost:5000/api/completions",
+      "https://velora-backend-1ty1.onrender.com/api/completions",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -108,7 +108,7 @@ const fetchReflections = async () => {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-      "http://localhost:5000/api/reflections",
+      "https://velora-backend-1ty1.onrender.com/api/reflections",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -147,7 +147,7 @@ const fetchReflections = async () => {
         localStorage.getItem("token");
 
       const response = await fetch(
-        "http://localhost:5000/api/habits",
+        "https://velora-backend-1ty1.onrender.com/api/habits",
         {
           method: "POST",
           headers: {
@@ -195,7 +195,7 @@ setHabits(prev => [
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        "http://localhost:5000/api/completions/toggle",
+        "https://velora-backend-1ty1.onrender.com/api/completions/toggle",
         {
           method: "POST",
           headers: {
@@ -312,7 +312,7 @@ setHabits(prev => [
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        "http://localhost:5000/api/reflections",
+        "https://velora-backend-1ty1.onrender.com/api/reflections",
         {
           method: "POST",
           headers: {
